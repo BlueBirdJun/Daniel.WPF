@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Jamesnet.Wpf" Version="1.0.0.78" />
+        <PackageReference Include="XamlDesign.Wpf" Version="1.0.0.1" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\Daniel.WPF.Support\Daniel.WPF.Support.csproj" />
+        <ProjectReference Include="..\MG.Common\Daniel.Common.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="Local\ViewModels\" />
+      <Folder Include="Theme\Views\" />
+      <Folder Include="UI\Views\" />
+    </ItemGroup>
+</Project>
