@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Daniel.WPF", "Daniel.WPF\Daniel.WPF.csproj", "{8725532F-0400-4F5F-AFF2-F88F4B07FAEC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Daniel.WPF", "Daniel.WPF\Daniel.WPF.csproj", "{8725532F-0400-4F5F-AFF2-F88F4B07FAEC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0_Common", "0_Common", "{DA011D0F-CFF2-435A-9F89-51C1E8CD507A}"
 EndProject
@@ -23,17 +23,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NP.Application", "NP.Applic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NP.Domain", "NP.Domain\NP.Domain.csproj", "{2D552E25-F6ED-4838-A341-3E084F28BBD9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Daniel.WPF.Support", "Daniel.WPF.Support\Daniel.WPF.Support.csproj", "{165971B0-EC93-48A1-AB44-CEABF005FEE5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Daniel.WPF.Support", "Daniel.WPF.Support\Daniel.WPF.Support.csproj", "{165971B0-EC93-48A1-AB44-CEABF005FEE5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Daniel.WPF.Main", "Daniel.WPF.Main\Daniel.WPF.Main.csproj", "{326E061B-1F47-4F51-BE70-F22F0F3C3EDF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Daniel.WPF.Main", "Daniel.WPF.Main\Daniel.WPF.Main.csproj", "{326E061B-1F47-4F51-BE70-F22F0F3C3EDF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Daniel.WPF.Home", "Daniel.WPF.Home\Daniel.WPF.Home.csproj", "{1129199B-1C3B-40E4-A457-FD5187CDFFE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Daniel.WPF.Home", "Daniel.WPF.Home\Daniel.WPF.Home.csproj", "{1129199B-1C3B-40E4-A457-FD5187CDFFE4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Daniel.WPF.Task1", "Daniel.WPF.Task1\Daniel.WPF.Task1.csproj", "{572672A3-BC58-4F36-9A80-0CA97C68A083}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Daniel.WPF.Task1", "Daniel.WPF.Task1\Daniel.WPF.Task1.csproj", "{572672A3-BC58-4F36-9A80-0CA97C68A083}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Daniel.WPF.Task2", "Daniel.WPF.Task2\Daniel.WPF.Task2.csproj", "{83A1D418-6F9E-4B0C-9C4A-874B4BD885D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Daniel.WPF.Task2", "Daniel.WPF.Task2\Daniel.WPF.Task2.csproj", "{83A1D418-6F9E-4B0C-9C4A-874B4BD885D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Daniel.Navigation", "Daniel.Navigation\Daniel.Navigation.csproj", "{41A826EB-8C5F-4947-9DE8-9C6CB09EEF3A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Daniel.Navigation", "Daniel.Navigation\Daniel.Navigation.csproj", "{41A826EB-8C5F-4947-9DE8-9C6CB09EEF3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Daniel.Forms", "Daniel.Forms\Daniel.Forms.csproj", "{B9F56B20-DFF9-4A52-A9EB-66F6EFC89DFB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4_PlayGround", "4_PlayGround", "{A75C6D6E-845A-4F25-8C03-1D6B1D06AA71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Daniel.WPFApp", "Daniel.WPFApp\Daniel.WPFApp.csproj", "{0EE5953D-0CD7-4EFB-AC49-632EAF060A43}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -89,6 +95,14 @@ Global
 		{41A826EB-8C5F-4947-9DE8-9C6CB09EEF3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41A826EB-8C5F-4947-9DE8-9C6CB09EEF3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{41A826EB-8C5F-4947-9DE8-9C6CB09EEF3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9F56B20-DFF9-4A52-A9EB-66F6EFC89DFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9F56B20-DFF9-4A52-A9EB-66F6EFC89DFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9F56B20-DFF9-4A52-A9EB-66F6EFC89DFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9F56B20-DFF9-4A52-A9EB-66F6EFC89DFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EE5953D-0CD7-4EFB-AC49-632EAF060A43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EE5953D-0CD7-4EFB-AC49-632EAF060A43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EE5953D-0CD7-4EFB-AC49-632EAF060A43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EE5953D-0CD7-4EFB-AC49-632EAF060A43}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -106,6 +120,8 @@ Global
 		{572672A3-BC58-4F36-9A80-0CA97C68A083} = {8C0A2387-E380-45F6-B1C8-8C5664BCE1F9}
 		{83A1D418-6F9E-4B0C-9C4A-874B4BD885D6} = {8C0A2387-E380-45F6-B1C8-8C5664BCE1F9}
 		{41A826EB-8C5F-4947-9DE8-9C6CB09EEF3A} = {8C0A2387-E380-45F6-B1C8-8C5664BCE1F9}
+		{B9F56B20-DFF9-4A52-A9EB-66F6EFC89DFB} = {B203290C-85ED-4375-992E-3533720A1FF5}
+		{0EE5953D-0CD7-4EFB-AC49-632EAF060A43} = {A75C6D6E-845A-4F25-8C03-1D6B1D06AA71}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DF4E356C-6718-43AB-AFAE-6A1CEA84A595}

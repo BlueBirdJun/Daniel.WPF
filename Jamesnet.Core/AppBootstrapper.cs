@@ -26,10 +26,13 @@ public abstract class AppBootstrapper
     protected abstract void RegisterViewModels();
     protected abstract void RegisterDependencies();
 
+    //protected abstract void ResisterViewModules();
+
     public void Run()
     {
         RegisterViewModels();
         RegisterDependencies();
+      //  ResisterViewModules();
         OnStartup();
     }
 

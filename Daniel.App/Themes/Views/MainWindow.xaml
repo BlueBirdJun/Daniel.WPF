@@ -1,0 +1,17 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:james="clr-namespace:Jamesnet.Wpf.Controls;assembly=Jamesnet.Wpf"
+                    xmlns:based="clr-namespace:Daniel.WPF.Support.UI.Units;assembly=Daniel.WPF.Support"
+                    xmlns:units="clr-namespace:Daniel.App.UI.Views"
+                    >
+    <Style TargetType="{x:Type units:MainWindow}" BasedOn="{StaticResource {x:Type based:DarkWindow}}">
+        <Setter Property="Content">
+            <Setter.Value>
+                <StackPanel Orientation="Vertical">
+                    <TextBlock Text="AAAA" />
+                    <james:JamesRegion RegionName="MainRegion"/>                    
+                </StackPanel>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

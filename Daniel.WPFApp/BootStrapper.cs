@@ -1,17 +1,14 @@
-﻿ 
-using Jamesnet.Core;
-using Jamesnet.Wpf.Controls;
-using Prism.Ioc;
+﻿using Jamesnet.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Daniel.WPF;
+namespace Daniel.WPFApp;
 
 internal class BootStrapper : AppBootstrapper
-{
+{ 
 	protected override void RegisterViewModels()
 	{
 		//ViewModelMapper.Register<MainContent, MainContentViewModel>();
@@ -37,12 +34,7 @@ internal class BootStrapper : AppBootstrapper
 	}
 	protected override void OnStartup()
 	{
-		 
 	}
 
- 
- 
-
-	
-
+	 
 }

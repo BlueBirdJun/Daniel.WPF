@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UseWPF>true</UseWPF>
+	</PropertyGroup>
+    <ItemGroup>
+   
+        <ProjectReference Include="..\Daniel.WPF.Support\Daniel.WPF.Support.csproj" />
+   
+        <ProjectReference Include="..\Jamesnet.Windows\Jamesnet.Windows.csproj" />
+        <ProjectReference Include="..\MG.Common\Daniel.Common.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Jamesnet.Wpf" Version="1.0.0.78" />
+        <PackageReference Include="XamlDesign.Wpf" Version="1.0.0.1" />
+        <PackageReference Include="WPF-UI" Version="3.0.5" />
+    </ItemGroup>
+</Project>
