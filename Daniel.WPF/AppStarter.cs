@@ -1,5 +1,6 @@
-﻿using Daniel.Forms.UI.Views;
- 
+﻿
+
+using Daniel.WPF.UI.Views;
 using Jamesnet.Wpf.Controls;
 using System;
 using System.Collections.Generic;

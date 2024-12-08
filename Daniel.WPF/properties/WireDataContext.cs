@@ -1,5 +1,6 @@
-﻿using Daniel.Forms.Local.ViewModels;
-using Daniel.Forms.UI.Views;
+﻿
+using Daniel.WPF.Local.ViewModels;
+using Daniel.WPF.UI.Views;
 using Jamesnet.Wpf.Global.Location;
 using System;
 using System.Collections.Generic;
