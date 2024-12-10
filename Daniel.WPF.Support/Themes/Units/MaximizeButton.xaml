@@ -16,6 +16,7 @@
                         <james:JamesIcon                                     
                             Fill="{TemplateBinding Foreground}"
                             Width="16" Height="16"
+                            x:Name="iconname"
                             Icon="{Binding MaxButtonICon}"/>
                     </Border>
                     <ControlTemplate.Triggers>
