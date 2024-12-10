@@ -18,9 +18,9 @@ public class DarkWindow : JamesWindow
 	public override void OnApplyTemplate()
 	{
 		base.OnApplyTemplate();
-		//Border border = GetTemplateChild("PART_Bar") as Border;
-		//border.MouseMove += Border_MouseMove;
-		//border.MouseLeftButtonDown += Border_MouseLeftButtonDown;
+		Border border = GetTemplateChild("PART_Bar") as Border;
+		border.MouseMove += Border_MouseMove;
+		border.MouseLeftButtonDown += Border_MouseLeftButtonDown;
 	}
 
 	private void Border_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)

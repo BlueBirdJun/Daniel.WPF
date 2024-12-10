@@ -17,4 +17,5 @@ public class MainWindows : DarkWindow
 			  new FrameworkPropertyMetadata(typeof(MainWindows)));
 	}
 
+
 }
