@@ -1,4 +1,6 @@
-﻿using Prism.Ioc;
+﻿
+using Daniel.WPF.Support.Helpers;
+using Prism.Ioc;
 using Prism.Modularity;
 using System;
 using System.Collections.Generic;
@@ -7,19 +9,16 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Daniel.WPF.properties;
-
 public class ServiceModules : IModule
 {
 	public void OnInitialized(IContainerProvider containerProvider)
 	{
-
 	}
+
 	public void RegisterTypes(IContainerRegistry containerRegistry)
 	{
-		//containerRegistry.RegisterSingleton<ColorManager>();
-		//containerRegistry.RegisterSingleton<DirectoryManager>();
-		//containerRegistry.RegisterSingleton<FileService>();
-		//containerRegistry.RegisterSingleton<NavigatorService>();
+		containerRegistry.RegisterSingleton<ThemeManager>();
+
+		//containerRegistry.RegisterSingleton<IViewable, MainContent>("MainContent");
 	}
 }
-

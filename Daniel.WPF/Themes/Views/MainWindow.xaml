@@ -5,15 +5,19 @@
     xmlns:based="clr-namespace:Daniel.WPF.Support.UI.Units;assembly=Daniel.WPF.Support"
     xmlns:views="clr-namespace:Daniel.WPF.UI.Views"
     >
+
     <Style 
      TargetType="{x:Type views:MainWindows}" 
      BasedOn="{StaticResource {x:Type based:DarkWindow}}">
-        <Setter Property="Content">
+        <Setter Property="Content" >
             <Setter.Value>
-                <StackPanel Orientation="Vertical">
-
+                <StackPanel Orientation="Vertical" >
+                    <TextBlock Text="{Binding ThemeText}"  Foreground="White"/>
+                    <Button Content="themeChange"  Command="{Binding ThemeChangeCommand}" />
                 </StackPanel>
             </Setter.Value>
         </Setter>
     </Style>
+
+
 </ResourceDictionary>
