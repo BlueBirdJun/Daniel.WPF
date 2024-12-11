@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Daniel.WPF.Support.Local.Models;
 
-public class NaviItem
+public partial class NaviItem : ObservableObject
 {
 	[ObservableProperty]
 	public int _id;
