@@ -15,8 +15,4 @@
         <ProjectReference Include="..\MG.Common\Daniel.Common.csproj" />
         <ProjectReference Include="..\Daniel.WPF.Support\Daniel.WPF.Support.csproj" />
     </ItemGroup>
-    <ItemGroup>
-      <Folder Include="Local\ViewModels\" />
-      <Folder Include="Themes\Views\" />
-    </ItemGroup>
 </Project>

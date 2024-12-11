@@ -7,10 +7,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+ 
+
   <ItemGroup>
-    <Folder Include="Local\ViewModels\" />
-    <Folder Include="Theme\Views\" />
-    <Folder Include="UI\Views\" />
+    <ProjectReference Include="..\Jamesnet.Windows\Jamesnet.Windows.csproj" />
   </ItemGroup>
 
 </Project>

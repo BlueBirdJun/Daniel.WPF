@@ -11,6 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+ 
 
 namespace Daniel.WPF.Local.ViewModels;
 public partial class MainWindowViewModel : ObservableBase, IViewLoadable
@@ -20,13 +21,16 @@ public partial class MainWindowViewModel : ObservableBase, IViewLoadable
 	private readonly ThemeManager _themeManager;
 	private IViewable _view;
 
-	public MainWindowViewModel(IContainerProvider containerProvider, IRegionManager regionManager,ThemeManager theme)
+	public MainWindowViewModel(IContainerProvider containerProvider, IRegionManager regionManager , ThemeManager theme)
 	{
 		_containerProvider = containerProvider;
 		_regionManager = regionManager; 
 		_themeManager = theme;
-		  
+		_themeManager.RegisterTheme("Dark",  "Daniel.WPF.Support", "Resources/DarkTheme.xaml");
+		_themeManager.RegisterTheme("Light", "Daniel.WPF.Support", "Resources/LightTheme.xaml");
+		_themeManager.ApplyTheme("Light");
 		ThemeText = _isDarkTheme ? "Dark" : "Light";
+		 
 	}
 
 	public void OnLoaded(IViewable view)

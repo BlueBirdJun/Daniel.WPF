@@ -7,4 +7,6 @@
     <SolidColorBrush x:Key="SelectedFontBrush" Color="#333333"/>
     <SolidColorBrush x:Key="SliderBrush" Color="#22FFC0CB"/>
     <SolidColorBrush x:Key="TitleBarBackground" Color="Gray" />
+
+    <SolidColorBrush x:Key="TestColor" Color="Red" />
 </ResourceDictionary>

@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 using System.Windows;
 
 namespace Daniel.WPF.Support.Helpers;
-public class ThemeManager
+public interface IThemeManage
+{
+	void ApplyTheme(string themeName);
+	void RegisterTheme(string themeName, string assemblyName, string resourcePath);
+}
+
+public class ThemeManager: IThemeManage
 {
 	private Dictionary<string, ResourceDictionary> _themes = new();
 

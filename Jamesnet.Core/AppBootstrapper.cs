@@ -5,6 +5,7 @@ public abstract class AppBootstrapper
     protected readonly IContainer Container;
     protected readonly ILayerManager Layer;
     protected readonly IViewModelMapper ViewModelMapper;
+    
 
     protected AppBootstrapper()
     {

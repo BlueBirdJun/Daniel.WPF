@@ -10,13 +10,14 @@
 
   <ItemGroup>
     <Compile Remove="AppStarter.cs" />
-    <Compile Remove="BootStrapper.cs" />
     <Compile Remove="Starter.cs" />
   </ItemGroup>
 
  
 
   <ItemGroup> 
+    <ProjectReference Include="..\Daniel.Navigation\Daniel.Navigation.csproj" /> 
+    <ProjectReference Include="..\Daniel.WPF.Main\Daniel.WPF.Main.csproj" /> 
     <ProjectReference Include="..\Daniel.WPF.Support\Daniel.WPF.Support.csproj" /> 
     <ProjectReference Include="..\Jamesnet.Windows\Jamesnet.Windows.csproj" /> 
     <ProjectReference Include="..\MG.Common\Daniel.Common.csproj" />
