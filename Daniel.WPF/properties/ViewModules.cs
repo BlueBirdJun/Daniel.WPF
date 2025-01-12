@@ -25,6 +25,7 @@ internal class ViewModules : IModule
 		//IView mainContent = containerRegistry.Resolve<Daniel.WPF.Main.UI.Views.MainContent>();
 
 		//IView mainContent = Container.Resolve<MainContent>();
+		//안녀
 		//IView naviContent = Container.Resolve<Navigation.UI.Views.Navigation>();
 	}
 }
