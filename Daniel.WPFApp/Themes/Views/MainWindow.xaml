@@ -11,6 +11,7 @@
         <Setter Property="Content">
             <Setter.Value>
                 <StackPanel Orientation="Vertical">
+                    
 
                 </StackPanel>
             </Setter.Value>

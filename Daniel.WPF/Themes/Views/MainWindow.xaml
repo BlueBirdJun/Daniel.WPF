@@ -26,7 +26,9 @@
                     <Border BorderBrush="Beige" BorderThickness="1" Grid.Column="2" Grid.Row="0" >
                         <Button Content="themeChange"  Command="{Binding ThemeChangeCommand}"     Grid.Column="1" Grid.Row="0" Width="100" Height="100" />
                     </Border>
-                    <jameswindow:WPFLayer LayerName="Navigator" Grid.Column="0" Grid.Row="1"/>
+                    <jameswindow:WPFLayer LayerName="Navigator" Grid.Column="0" Grid.Row="1">
+                        
+                    </jameswindow:WPFLayer>
                     <jameswindow:WPFLayer LayerName="MainLayer" Grid.Column="1" Grid.Row="1"/>
                 </Grid>
                

@@ -2,5 +2,7 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="/Daniel.Navigation;component/Themes/Views/NavigationView.xaml" />
+        <ResourceDictionary Source="/Daniel.Navigation;component/Themes/Units/NavigationRoot.xaml" />
+        <ResourceDictionary Source="/Daniel.Navigation;component/Themes/Units/NaviItem.xaml" />
      </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>
