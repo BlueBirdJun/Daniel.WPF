@@ -9,7 +9,7 @@
                     <StackPanel >
                         <TextBlock Text="naiv"/>
                         
-                        <units:NavigationRoot ItemsSource="{Binding Naviagetions}">    </units:NavigationRoot>
+                        <units:NavigationRoot ItemsSource="{Binding Naviagetions}"  SelectionCommand="{Binding FolderChangedCommand}">     </units:NavigationRoot>
                     </StackPanel>
                 </ControlTemplate>
             </Setter.Value>

@@ -7,7 +7,7 @@ using System.Windows;
 using System.Windows.Controls;
 
 namespace Daniel.Navigation.UI.Units;
-public class NaviItem :TreeView
+public class NaviItem : TreeViewItem
 {
 	static NaviItem()
 	{

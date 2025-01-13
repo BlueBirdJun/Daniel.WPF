@@ -4,5 +4,6 @@
         <ResourceDictionary Source="/Daniel.Navigation;component/Themes/Views/NavigationView.xaml" />
         <ResourceDictionary Source="/Daniel.Navigation;component/Themes/Units/NavigationRoot.xaml" />
         <ResourceDictionary Source="/Daniel.Navigation;component/Themes/Units/NaviItem.xaml" />
+        <ResourceDictionary Source="/Daniel.Navigation;component/Themes/Units/ExpandedButton.xaml" />
      </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

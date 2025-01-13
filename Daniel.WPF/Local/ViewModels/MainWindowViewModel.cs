@@ -92,5 +92,5 @@ public partial class MainWindowViewModel : ObservableBase, IViewLoadable
 		_themeManager.ApplyTheme(_isDarkTheme ? "Dark" : "Light");
 		ThemeText = _isDarkTheme ? "Dark" : "Light";
 	}
-
+ 
 }

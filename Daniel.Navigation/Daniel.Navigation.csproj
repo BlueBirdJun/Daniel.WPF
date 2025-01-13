@@ -10,6 +10,7 @@
  
 
   <ItemGroup>
+    <ProjectReference Include="..\Daniel.WPF.Support\Daniel.WPF.Support.csproj" />
     <ProjectReference Include="..\Jamesnet.Windows\Jamesnet.Windows.csproj" />
   </ItemGroup>
 
