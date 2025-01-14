@@ -1,0 +1,9 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/Daniel.WPF.Task1;component/Themes/Views/Task1View.xaml" />
+        <ResourceDictionary Source="/Daniel.WPF.Task1;component/Themes/Units/NavigationBar.xaml" />
+        <ResourceDictionary Source="/Daniel.WPF.Task1;component/Themes/Units/NightDayButton.xaml" />
+        <ResourceDictionary Source="/Daniel.WPF.Task1;component/Themes/Units/PlayButton.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

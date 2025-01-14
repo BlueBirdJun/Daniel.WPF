@@ -1,4 +1,4 @@
-﻿using Daniel.WPF.properties;
+﻿
 using Daniel.WPF.Support.Helpers;
 using Daniel.WPF.UI.Views;
 using Jamesnet.Wpf.Controls;
@@ -12,8 +12,8 @@ public partial class App : JamesApplication
 	public App()
 	{
 		ViewModelLocatorCollection items = new ViewModelLocatorCollection();
-		RegisterWireDataContexts(items);
-		AddInversionModule<ServiceModules>();
+		//RegisterWireDataContexts(items);
+		//AddInversionModule<ServiceModules>();
 		var bootstrapper = new BootStrapper();
 		bootstrapper.Match(items);
 		bootstrapper.Run();

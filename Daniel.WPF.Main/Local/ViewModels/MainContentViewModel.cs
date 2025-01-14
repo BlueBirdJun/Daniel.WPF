@@ -1,5 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
-using Jamesnet.Core;
+using Jamesnet.Wpf.Controls;
 using Jamesnet.Wpf.Mvvm;
 using System;
 using System.Collections.Generic;
@@ -11,11 +11,12 @@ namespace Daniel.WPF.Main.Local.ViewModels;
 public partial class MainContentViewModel : ObservableBase, IViewLoadable
 {
 	public MainContentViewModel() { }
-
-	public void Loaded()
+	  
+	public void OnLoaded(IViewable view)
 	{
 		Title = "aaaa";
 	}
+
 	[ObservableProperty]
 	private string _Title;
 }

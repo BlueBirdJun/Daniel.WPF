@@ -4,8 +4,10 @@ using Daniel.Navigation.UI.Views;
 using Daniel.WPF.Local.ViewModels;
 using Daniel.WPF.Main.Local.ViewModels;
 using Daniel.WPF.Main.UI.Views;
-using Daniel.WPF.properties;
+
 using Daniel.WPF.Support.Helpers;
+using Daniel.WPF.Task1.Local.ViewModels;
+using Daniel.WPF.Task1.UI.Views;
 using Daniel.WPF.UI.Views;
 using Jamesnet.Core;
 using Jamesnet.Wpf.Controls;
@@ -36,12 +38,20 @@ internal class BootStrapper : AppBootstrapper
 
 		ViewModelMapper.Register<MainContent, MainContentViewModel>();
 		ViewModelMapper.Register<Navigation.UI.Views.NavigationView, NavigationViewViewModel>();
+
+		ViewModelMapper.Register<Task1View, Task1ViewViewModel>();
+
+
+		//ViewModelMapper.Register<Task1View, Task1ViewViewModel>();
 		//ViewModelMapper.Register<MainWindows, MainWindowViewModel>();
 		//ViewModelMapper.Register<MainWindows, MainWindowViewModel>();
 		//ViewModelMapper.Register<SocialContent, SocialContentViewModel>();
 	}
 	protected override void RegisterDependencies()
 	{
+		Container.RegisterSingleton<IView, MainContent>("Main");
+		Container.RegisterSingleton<IView, Task1View>("Task1");
+
 		//ServiceModules imo = new ServiceModules();
 		//imo.RegisterTypes();
 		//Container.RegisterSingleton<IThemeManage,ThemeManager>();
@@ -56,6 +66,7 @@ internal class BootStrapper : AppBootstrapper
 
 		IView mainContent = Container.Resolve<MainContent>();
 		IView navi = Container.Resolve<NavigationView>();
+		//IView task1 = Container.Resolve<Task1View>();
 		//IView subNavContent = Container.Resolve<SubMenuContent>();
 		//IView socialContent = Container.Resolve<SocialContent>();
 		//IView subMenuContent = Container.Resolve<SubMenuContent>();
@@ -63,6 +74,7 @@ internal class BootStrapper : AppBootstrapper
 
 		Layer.Mapping("MainLayer", mainContent);
 		Layer.Mapping("Navigator", navi);
+		//Layer.Mapping("Task1", task1);
 		//Layer.Mapping("SubNavLayer", subNavContent);
 		//Layer.Mapping("SocialLayer", socialContent);
 		//Layer.Mapping("SubMenuLayer", subMenuContent);
@@ -73,6 +85,7 @@ internal class BootStrapper : AppBootstrapper
 	{
 		//items.RegisterSingleton<IThemeManage,ThemeManager>();
 		items.Register<MainWindows, MainWindowViewModel>();
+		//items.Register<Navigation.UI.Views.NavigationView, NavigationViewViewModel>();
 	}
 	protected override void OnStartup()
 	{

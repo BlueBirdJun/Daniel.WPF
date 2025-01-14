@@ -1,4 +1,6 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:james="clr-namespace:Jamesnet.Wpf.Controls;assembly=Jamesnet.Wpf"
+                    xmlns:units="clr-namespace:Daniel.WPF.Task1.UI.Units"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     
 </ResourceDictionary>

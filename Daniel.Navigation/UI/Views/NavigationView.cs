@@ -4,12 +4,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace Daniel.Navigation.UI.Views;
 public class NavigationView:WPFView
 {
-	public NavigationView()
+	static NavigationView()
 	{  
-	   DefaultStyleKey = typeof(NavigationView);
+	   
+		DefaultStyleKeyProperty.OverrideMetadata(typeof(NavigationView),
+				  new FrameworkPropertyMetadata(typeof(NavigationView)));
 	}	
 }

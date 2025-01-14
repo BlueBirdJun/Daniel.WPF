@@ -19,6 +19,8 @@
     <ProjectReference Include="..\Daniel.Navigation\Daniel.Navigation.csproj" /> 
     <ProjectReference Include="..\Daniel.WPF.Main\Daniel.WPF.Main.csproj" /> 
     <ProjectReference Include="..\Daniel.WPF.Support\Daniel.WPF.Support.csproj" /> 
+    <ProjectReference Include="..\Daniel.WPF.Task1\Daniel.WPF.Task1.csproj" /> 
+    <ProjectReference Include="..\Daniel.WPF.Task2\Daniel.WPF.Task2.csproj" /> 
     <ProjectReference Include="..\Jamesnet.Windows\Jamesnet.Windows.csproj" /> 
     <ProjectReference Include="..\MG.Common\Daniel.Common.csproj" />
   </ItemGroup>

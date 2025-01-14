@@ -14,12 +14,14 @@ using System.Windows;
  
 
 namespace Daniel.WPF.Local.ViewModels;
+
+
 public partial class MainWindowViewModel : ObservableBase, IViewLoadable
 {
 	private readonly IContainerProvider _containerProvider;
 	private readonly IRegionManager _regionManager;
 	private readonly ThemeManager _themeManager;
-	private IViewable _view;
+	private   IViewable _view;
 
 	public MainWindowViewModel(IContainerProvider containerProvider, IRegionManager regionManager , ThemeManager theme)
 	{
