@@ -3,5 +3,133 @@
                     xmlns:james="clr-namespace:Jamesnet.Wpf.Controls;assembly=Jamesnet.Wpf"
                     xmlns:units="clr-namespace:Daniel.WPF.Task1.UI.Units"
                     >
-    
+
+    <Style TargetType="{x:Type Grid}" x:Key="RoundGridStyle">
+        <Setter Property="Width" Value="130" />
+        <Setter Property="Height" Value="50" />
+        <Setter Property="Clip">
+            <Setter.Value>
+                <RectangleGeometry Rect="0,0,130,50">
+                    <RectangleGeometry.RadiusX>25</RectangleGeometry.RadiusX>
+                    <RectangleGeometry.RadiusY>25</RectangleGeometry.RadiusY>
+                </RectangleGeometry>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type Border}" x:Key="BaseColorStyle">
+        <Setter Property="Background" Value="#8cbcfa"/>
+        <Setter Property="CornerRadius" Value="25"/>
+        <Setter Property="Visibility" Value="Visible"/>
+    </Style>
+
+    <Style TargetType="{x:Type Ellipse}" x:Key="CircleStyle" >
+        <Setter Property="Width" Value="40"/>
+        <Setter Property="Height" Value="40"/>
+        <Setter Property="Margin" Value="8, 0, 8, 0"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="Fill" Value="#ffb15f"/>
+    </Style>
+
+    <Style TargetType="{x:Type Image}" x:Key="BaseImageStyle" >
+        <Setter Property="Stretch" Value="None" />
+        <Setter Property="HorizontalAlignment" Value="Left" />
+    </Style>
+
+    <Style TargetType="{x:Type Image}" x:Key="StartImageStyle" 
+        BasedOn="{StaticResource BaseImageStyle}">
+        <Setter Property="Source" Value="/Daniel.WPF.Task1;component/Images/stars.png"/>
+        <Setter Property="Width" Value="72"/>
+        <Setter Property="Height" Value="47"/>
+        <Setter Property="Opacity" Value="0"/>
+        <Setter Property="Stretch" Value="None"/>
+    </Style>
+
+    <Style TargetType="{x:Type Image}" x:Key="CloudImageStyle" 
+        BasedOn="{StaticResource BaseImageStyle}">
+        <Setter Property="Source" Value="/Daniel.WPF.Task1;component/Images/cloud.png" />
+        <Setter Property="VerticalAlignment" Value="Top" />
+    </Style>
+
+    <Style TargetType="{x:Type units:NightDayButton}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type units:NightDayButton}">
+                    <ControlTemplate.Resources>
+                        <Storyboard x:Key="SlideOut">
+                            <james:ThickItem TargetName="cloud1" Duration="0:0:0.5" Property="Margin" To="183,-58,0,-50"/>
+                            <james:ThickItem TargetName="cloud2" Duration="0:0:0.5" Property="Margin" To="175,-24,0,-50"/>
+                            <james:ThickItem TargetName="cloud3" Duration="0:0:0.5" Property="Margin" To="-140,0,0,0"/>
+                            <james:ThickItem TargetName="cloud4" Duration="0:0:0.5" Property="Margin" To="-139,-33,0,-50"/>
+                            <james:ValueItem TargetName="cloud1" Duration="0:0:0.5" Property="Opacity" To="0"/>
+                            <james:ValueItem TargetName="cloud2" Duration="0:0:0.5" Property="Opacity" To="0"/>
+                            <james:ValueItem TargetName="cloud3" Duration="0:0:0.5" Property="Opacity" To="0"/>
+                            <james:ValueItem TargetName="cloud4" Duration="0:0:0.5" Property="Opacity" To="0"/>
+                        </Storyboard>
+                        <Storyboard x:Key="SlideIn">
+                            <james:ThickItem TargetName="cloud1" Duration="0:0:0.5" Property="Margin" To="53,12,0,0"/>
+                            <james:ThickItem TargetName="cloud2" Duration="0:0:0.5" Property="Margin" To="45,26,0,0"/>
+                            <james:ThickItem TargetName="cloud3" Duration="0:0:0.5" Property="Margin" To="-10,34,0,0"/>
+                            <james:ThickItem TargetName="cloud4" Duration="0:0:0.5" Property="Margin" To="-9,27,0,0" />
+                            <james:ValueItem TargetName="cloud1" Duration="0:0:0.5" Property="Opacity" To="0.5"/>
+                            <james:ValueItem TargetName="cloud2" Duration="0:0:0.5" Property="Opacity" To="1.0"/>
+                            <james:ValueItem TargetName="cloud3" Duration="0:0:0.5" Property="Opacity" To="1.0"/>
+                            <james:ValueItem TargetName="cloud4" Duration="0:0:0.5" Property="Opacity" To="0.5"/>
+                        </Storyboard>
+                        <Storyboard x:Key="StarsIn">
+                            <james:ValueItem TargetName="galaxy" Duration="0:0:0.5" Property="Opacity" To="0"/>
+                            <james:ThickItem TargetName="galaxy" Duration="0:0:0.5" Property="Margin" To="0,-50,0,0"/>
+                            <james:ThickItem TargetName="circle" Duration="0:0:0.5" Property="Margin" To="8,0,0,0" Mode="CubicEaseInOut"/>
+                            <james:ColorItem TargetName="circle" Duration="0:0:0.5" Property="(Fill).(SolidColorBrush.Color)" To="#ffb15f"/>
+                            <james:ColorItem TargetName="border" Duration="0:0:0.5" Property="(Background).(SolidColorBrush.Color)" To="#8cbcfa"/>
+                        </Storyboard>
+                        <Storyboard x:Key="StarsOut">
+                            <james:ValueItem TargetName="galaxy" Duration="0:0:0.5" Property="Opacity" To="1"/>
+                            <james:ThickItem TargetName="galaxy" Duration="0:0:0.5" Property="Margin" To="0"/>
+                            <james:ThickItem TargetName="circle" Duration="0:0:0.5" Property="Margin" To="82,0,0,0" Mode="CubicEaseInOut"/>
+                            <james:ColorItem TargetName="circle" Duration="0:0:0.5" Property="(Fill).(SolidColorBrush.Color)" To="#e6b91b"/>
+                            <james:ColorItem TargetName="border" Duration="0:0:0.5" Property="(Background).(SolidColorBrush.Color)" To="#191c25"/>
+                        </Storyboard>
+                    </ControlTemplate.Resources>
+                    <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+                                <TextBlock Text="NigthDay"/>
+                            <Grid Grid.Row="1" Width="200" Height="100" >
+                            <Border BorderThickness="{TemplateBinding BorderThickness}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                CornerRadius="{TemplateBinding CornerRadius}">
+                                <Viewbox>
+                                    <Grid Style="{StaticResource RoundGridStyle}">
+                                        <Border x:Name="border" Style="{StaticResource BaseColorStyle}"/>
+                                        <Image x:Name="galaxy" Style="{StaticResource StartImageStyle}"/>
+
+                                        <Image x:Name="cloud1" Style="{StaticResource CloudImageStyle}" Opacity="0.5" Margin="53,12,0,0"/>
+                                        <Image x:Name="cloud2" Style="{StaticResource CloudImageStyle}" Opacity="1.0" Margin="45,26,0,0"/>
+                                        <Image x:Name="cloud3" Style="{StaticResource CloudImageStyle}" Opacity="1.0" Margin="0,34,0,0"/>
+                                        <Image x:Name="cloud4" Style="{StaticResource CloudImageStyle}" Opacity="0.5" Margin="-9,27,0,0"/>
+                                        <Ellipse x:Name="circle" Style="{StaticResource CircleStyle}"/>
+                                    </Grid>
+                                </Viewbox>
+                            </Border>
+                        </Grid>
+                         </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Trigger.EnterActions>
+                                <BeginStoryboard Storyboard="{StaticResource SlideOut}"/>
+                                <BeginStoryboard Storyboard="{StaticResource StarsOut}"/>
+                            </Trigger.EnterActions>
+                            <Trigger.ExitActions>
+                                <BeginStoryboard Storyboard="{StaticResource SlideIn}"/>
+                                <BeginStoryboard Storyboard="{StaticResource StarsIn}"/>
+                            </Trigger.ExitActions>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
 </ResourceDictionary>

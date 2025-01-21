@@ -23,13 +23,41 @@
              
             </Style.Triggers>
         </Style>
+
+        <Style TargetType="{x:Type Grid}" x:Key="RoundGridStyle">
+            <Setter Property="Width" Value="130" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Clip">
+                <Setter.Value>
+                    <RectangleGeometry Rect="0,0,130,50">
+                        <RectangleGeometry.RadiusX>25</RectangleGeometry.RadiusX>
+                        <RectangleGeometry.RadiusY>25</RectangleGeometry.RadiusY>
+                    </RectangleGeometry>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style TargetType="{x:Type Border}" x:Key="BaseColorStyle">
+            <Setter Property="Background" Value="#8cbcfa"/>
+            <Setter Property="CornerRadius" Value="25"/>
+            <Setter Property="Visibility" Value="Visible"/>
+        </Style>
+        
+        <Style TargetType="{x:Type Ellipse}" x:Key="CircleStyle" >
+            <Setter Property="Width" Value="40"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="Margin" Value="8, 0, 8, 0"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="Fill" Value="#ffb15f"/>
+        </Style>
     </Window.Resources>
-    <Grid >
+    <Grid  Background="{StaticResource back1}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="200"/>
-            
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-            <StackPanel Orientation="Vertical"  Width="200" Background="{StaticResource back1}">
+        
+            <StackPanel Orientation="Vertical"  Width="200" >
                 <Border   Margin="3,1,1,1" Height="35" Style="{StaticResource borderstyle}">
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -78,5 +106,19 @@
             <Border Background="{StaticResource border}" Margin="3,1,1,1" Height="35" Style="{StaticResource borderstyle}"></Border>
 
         </StackPanel>
+
+        <Grid Grid.Column="1" Height="30" Width="60" >
+            <Ellipse Width="17" Height="17" Fill="#ffff" Margin="26,1,16,12"/>
+            <Ellipse Width="17" Height="17" Fill="#FFFFFF" Margin="38,1,5,12"/>
+            <Ellipse Width="17" Height="17" Fill="#FFFFFF" Margin="10,12,33,1"/>
+            <Ellipse Width="17" Height="17" Fill="#FFFFFF" Margin="23,12,20,1"/>
+            <Ellipse Width="17" Height="17" Fill="#FFFFFF" Margin="32,13,11,0"/>
+            <Ellipse Width="17" Height="17" Fill="#FFFFFF" Margin="43,8,0,5"/>
+            <Ellipse Width="17" Height="17" Fill="#FFFFFF" Margin="16,3,27,10"/>
+            <Ellipse Width="17" Height="17" Fill="#FFFFFF" Margin="5,2,38,11"/>
+            <Ellipse Width="17" Height="17" Fill="#FFFFFF" Margin="0,8,43,5"/>
+            
+        </Grid>
+
     </Grid>
 </Window>

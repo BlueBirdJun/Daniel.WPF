@@ -10,10 +10,12 @@
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type views:Task1View}" >
                     <StackPanel >
-                        <TextBlock Text="TASK1" Foreground="Red"/>
-                        <TextBlock Text="TASK11"/>
+                        <TextBlock Text="TASK1" Foreground="Red"/>                        
                         <TextBlock Text="{Binding TestString}"/>
                         <TextBox Width="100" />
+
+                        <units:NightDayButton />
+                        
                     </StackPanel>
                 </ControlTemplate>
             </Setter.Value>

@@ -7,6 +7,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Images\cloud.png" />
+    <None Remove="Images\logo.png" />
+    <None Remove="Images\stars.png" />
+  </ItemGroup>
+
     <ItemGroup>
         <PackageReference Include="Jamesnet.Wpf" Version="1.0.0.113" />
         <PackageReference Include="XamlDesign.Wpf" Version="1.0.0.1" />
@@ -14,5 +20,10 @@
     <ItemGroup>
         <ProjectReference Include="..\MG.Common\Daniel.Common.csproj" />
         <ProjectReference Include="..\Daniel.WPF.Support\Daniel.WPF.Support.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+      <Resource Include="Images\cloud.png" />
+      <Resource Include="Images\logo.png" />
+      <Resource Include="Images\stars.png" />
     </ItemGroup>
 </Project>
